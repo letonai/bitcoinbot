@@ -104,7 +104,7 @@ dist
 .tern-port
 
 #Sqlite
-*.sql
+#*.sql
 
 #api.secret file
 *.secret
