@@ -1,0 +1,26 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request-promise": "^4.2.2",
+    "sqlite3": "^5.0.2",
+    "telegraf": "^3.21.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letonai/telegramServerBot.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/letonai/telegramServerBot/issues"
+  },
+  "homepage": "https://github.com/letonai/telegramServerBot#readme"
+}
