@@ -105,3 +105,6 @@ dist
 
 #Sqlite
 *.sql
+
+#api.secret file
+*.secret
