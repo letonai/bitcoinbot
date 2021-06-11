@@ -1,4 +1,4 @@
-//CI TEST6
+//CI TEST7
 const request = require('request-promise')
 const Telegraf = require('telegraf');
 const { reply } = Telegraf;
