@@ -37,6 +37,7 @@ function registerMenus(jsonConfig){
   let  btMenu = [];
   jsonConfig["menu"].forEach(element => {
    btMenu.push(Markup.callbackButton(element.symbol, element.name));
+   //teste
   });
   return btMenu;
 }
