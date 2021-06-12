@@ -3,7 +3,7 @@ FROM node:14-alpine
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh && \
     cd / && \
-    git clone --branch dev  https://github.com/letonai/bitcoinbot && \
+    git clone https://github.com/letonai/bitcoinbot && \
     cd bitcoinbot && git checkout dev && npm install 
 
 #Telegram API key file (json)
