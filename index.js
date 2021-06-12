@@ -36,7 +36,7 @@ bot.on('callback_query',ctx => {
 function registerMenus(jsonConfig){
   let  btMenu = [];
   jsonConfig["menu"].forEach(element => {
-    btMenu.push(btMenu.push(Markup.callbackButton(element.symbol, element.name)));
+   btMenu.push(Markup.callbackButton(element.symbol, element.name));
   });
   return btMenu;
 }
