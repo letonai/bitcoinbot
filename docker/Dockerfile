@@ -4,14 +4,15 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh && \
     cd / && \
     git clone https://github.com/letonai/bitcoinbot && \
-    cd bitcoinbot && npm install && rm -rf .git && npm cache clean --force
+    cd bitcoinbot && git checkout dev && npm install 
 
 #Telegram API key file (json)
 ADD ./apikey.secret /bitcoinbot
+ADD ./menu.conf /bitcoinbot
 
-FROM node:14-alpine
+#FROM node:14-alpine
 
-COPY --from=0 /bitcoinbot /bitcoinbot
+#COPY --from=0 /bitcoinbot /bitcoinbot
 
 ADD ./entrypoint.sh /entrypoint.sh
 RUN ["chmod","+x","/entrypoint.sh"]
